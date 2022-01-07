@@ -19,15 +19,13 @@
   <hr class="dex-separator">
 
   <div>
-    <p><input type="checkbox" required name="terms"> 
-      I accept the <a href="https://www.edge-net.org/pages/usage-policy.html" target="_blank" >Terms and Conditions</a>
-    </p>
-  </div>
-  <hr class="dex-separator">
-
-  <div>
     <div class="theme-form-row">
       <form method="post">
+        <p>
+          <input type="checkbox" required name="terms"> 
+          I accept the <a href="https://www.edge-net.org/pages/usage-policy.html" target="_blank" >Terms and Conditions</a>
+        </p>
+        <hr class="dex-separator">
         <input type="hidden" name="req" value="{{ .AuthReqID }}"/>
         <input type="hidden" name="approval" value="approve">
         <button type="submit" class="dex-btn theme-btn--success">
